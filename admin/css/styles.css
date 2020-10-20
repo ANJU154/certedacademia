@@ -1,0 +1,34 @@
+@charset "UTF-8";
+*{margin: 0;padding: 0;font-family: verdana;}
+
+#header{width: 100%;height: 60px;background:#0278AE }
+#logo{width: 20%; height: 60px;float: left}
+#title{width: 60%; height: 60px;float: left}
+#link{width: 20%; height: 60px;float: left}
+#logo h2{text-align: center;line-height: 60px;}
+#logo h2 a{text-decoration: none;color: #51ADCF; text-shadow: 3px 3px 3px #000}
+#title h2{color: #fff; text-align: center;text-shadow: 3px 3px 3px #000 ; line-height: 60px}
+#link h3{text-align: centre; line-height: 60px;}
+#link h3 a{text-decoration: none; color: #fff; display: block;}
+#link h3:hover{background: #51ADCF}
+
+
+#bodyleft{width: 20%;height: 550px;background:#0278AE;float: left;overflow-y: auto;}
+#bodyleft h3{color: #fff;text-align:center;font-size: 12px;background: #51ADCF; height: 30px;line-height: 30px;font-weight: normal;margin-bottom: 2%;}
+#bodyleft ul{ list-style-type: none;}
+#bodyleft ul li{width:100%;height:30px;line-height: 30px;padding-left: 5%;box-sizing: border-box;}
+#bodyleft ul li a{text-decoration: none;color: #51ADCF;font-size: 12px;}
+#bodyleft ul li:hover{background: #fff}
+#bodyleft ul li:hover a{color: #51ADCF;}
+
+
+#bodyright{width: 80%;height: 550px;background:#fff;float: left;overflow-y: auto;}
+#bodyright h3{color: #fff;text-align: center;font-size: 12px;background: #51ADCF;height:30px;line-height: 30px;font-weight: normal;margin-bottom: 2%;}
+
+
+#add{width: 60%;margin:auto;padding: 2%;box-sizing: border-box;background: #0278AE;}
+#add details summary{width: 100%;text-align: center;height: 40px;color: #fff;border: 1px solid #51ADCF;font-size: 12px;line-height: 30px;outline: none;cursor: pointer;}
+#add details form{background:#0278AE;padding: 3%;box-sizing: border-box;}
+#add details form input{font-size: 12px;width: 100%;height: 30px;outline: none;padding-left: 3%;box-sizing: border-box;margin-bottom: 2%;}
+#add details form button{width: 40%;height: 30px;background: none;outline: none;border: 1px solid #51ADCF;color: #fff;font-size: 12px;}
+#add details form button:hover{curser:pointer;background: #fff;color: #0278AE;}
