@@ -3,7 +3,7 @@
   <ul>
       <li><a href="index.php">Dashboard</a></li>
     <li><a href="index.php?class">View categories</a></li>
-    <li><a href="#">View sub categories</a></li>
+    <li><a href="index.php?subclass">View subcategories</a></li>
   </ul>
   <h3>Class Management</h3>
   <ul>
@@ -34,6 +34,12 @@
 
   </ul>
 </div>
-<?php if(isset($_GET['class'])){
+<?php
+ if(isset($_GET['class']))
+{
   include("class.php");
-} ?>
+  }
+  if(isset($_GET['subclass']))
+  {
+      include("subclass.php");
+    }?>
