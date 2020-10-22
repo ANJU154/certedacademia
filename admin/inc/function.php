@@ -71,7 +71,7 @@ function select_class()
      echo "<tr>
             <td>".$i++."</td>
             <td>".$row['classno']."</td>
-            <td><a href='#'>Edit</a></td>
+            <td><a href='index.php?class&edit_class=".$row['classid']."'>Edit</a></td>
             <td><a href='#'>Delete</a></td>
           </tr>";
    endwhile;
@@ -98,5 +98,47 @@ function select_class()
           </tr>";
       endwhile;
  }
+ function edit_class(){
+   include("inc/db.php");
 
- ?>
+   if(isset($_GET['edit_class']))
+   {
+     $id=$_GET['edit_class'];
+     $get_class=$con->prepare("select * from class where classno='$id'");
+     $get_class->setFetchMode(PDO::FETCH_ASSOC);
+     $get_class->execute();
+     $row=$get_class->fetch();
+     echo "<h3>Edit Class</h3>
+          <form id='edit' enctype='multipart/form-data' method='post'>
+           <input type='text' name='class_name'   placeholder='Enter Class number' >
+           <centre><button  name='edit_class'>Edit Class</button></centre>
+     </form>";
+     if (isset($_POST['edit_class']))
+     {
+       $class_name=$_POST['class_name'];
+       $check=$con->prepare("select * from class where classno='$class_name'");
+       $check->setFetchMode(PDO:: FETCH_ASSOC);
+       $check->execute();
+       $count=$check->rowCount();
+           if($count==1)
+           {
+                 echo "<script> alert('Already added successfully')</script>";
+                 echo "<script> window.open('index.php?class','_self') </script>";
+           }
+           else{
+                 $up=$con->prepare("update class set classno='$class_name' where classid='$id'");
+                 if($up->execute())
+                 {
+                     echo "<script> alert('Updated successfully')</script>";
+                     echo "<script> window.open('index.php?class','_self') </script>";
+                 }
+                 else
+                 {
+                       echo "<script> alert('Not Updated successfully')</script>";
+                       echo "<script> window.open('index.php?class','_self') </script>";
+                 }
+               }
+        }
+       }
+       }  
+     ?>

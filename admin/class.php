@@ -1,8 +1,20 @@
-<div id="class">
-  <div id="bodyright">
+<div id="bodyright">
+  <?php
+  if(isset($_GET['edit_class'])){
+       echo edit_class();
+      }
+    else
+    { ?>
     <h3>View all categories</h3>
     <div id="add">
       <details>
+        <summary>Add Class</summary>
+        <form enctype="multipart/form-data" method="post">
+              <input type="text" name="class_name" placeholder="Enter Class number" >
+              <centre>
+                 <button  name="add_class">Add Class</button>
+              </centre>
+        </form>
         <table>
           <tr>
             <th>Srno</th>
@@ -12,15 +24,8 @@
           </tr>
           <?php echo viewclass(); ?>
         </table>
-        <summary>Add Class</summary>
-        <form enctype="multipart/form-data" method="post">
-              <input type="text" name="class_name" placeholder="Enter Class number" >
-              <centre>
-                 <button  name="add_class">Add Class</button>
-              </centre>
-        </form>
       </details>
     </div>
   </div>
-</div>
-<?php echo add_class(); ?>
+
+<?php echo add_class();} ?>
