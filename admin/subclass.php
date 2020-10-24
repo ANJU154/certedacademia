@@ -13,8 +13,8 @@
             <th>Srno</th>
             <th>Subject</th>
             <th>Class</th>
-            <th>Edit</th>
-            <th>Delete</th>
+            <th>Action</th>
+          
           </tr>
           <?php echo viewsubclass(); ?>
         </table>

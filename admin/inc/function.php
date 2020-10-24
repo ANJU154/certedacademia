@@ -71,8 +71,8 @@ function select_class()
      echo "<tr>
             <td>".$i++."</td>
             <td>".$row['classno']."</td>
-            <td><a href='index.php?class&edit_class=".$row['classid']."'>Edit</a></td>
-            <td><a href='index.php?class&del_class=".$row['classid']."'>Delete</a></td>
+            <td><a href='index.php?class&edit_class=".$row['classid']."' title='Edit'><i class='far fa-edit'></i></a>
+            <a style='color:#f00' href='index.php?class&del_class=".$row['classid']."' title='Delete'><i class='far fa-trash-alt'></i></a></td>
           </tr>";
    endwhile;
 
@@ -109,8 +109,10 @@ function select_class()
             <td>".$i++."</td>
             <td>".$row['subname']."</td>
             <td>".$row_class['classno']."</td>
-            <td><a href='index.php?subclass&edit_subject=".$row['sub_id']."'>Edit</a></td>
-            <td><a href='index.php?subclass&del_subject=".$row['sub_id']."'>Delete</a></td>
+            <td>
+            <a href='index.php?subclass&edit_subject=".$row['sub_id']."' title='Edit'><i class='far fa-edit'></i></a>
+            <a style='color:#f00' href='index.php?subclass&del_subject=".$row['sub_id']."' title='Delete'><i class='far fa-trash-alt'></i></a>
+            </td>
           </tr>";
       endwhile;
 

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>ADMIN | HOME</title>
     <link href="css/styles.css?version=51" rel="stylesheet" type="text/css" />
-    <script src="https://use.fontawesome.com/9bc167ad20.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
     <?php include("inc/header.php");
