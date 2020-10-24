@@ -1,9 +1,14 @@
-<div id="subclass">
-  <div id="bodyright">
+<div id="bodyright">
+    <?php
+    if(isset($_GET['edit_subject']))
+    {
+      echo edit_subject();
+    }
+    else{?>
     <h3>View all subcategories</h3>
     <div id="add">
       <details>
-        <table>
+        <table >
           <tr>
             <th>Srno</th>
             <th>Subject</th>
@@ -28,6 +33,6 @@
       </form>
     </details>
   </div>
-  </div>
+<?php } ?>
 </div>
 <?php echo add_subclass(); ?>
