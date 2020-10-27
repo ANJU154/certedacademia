@@ -28,7 +28,7 @@
   <ul>
     <li><a href="#">Terms and conditions</a></li>
     <li><a href="index.php?contact"><i class="far fa-id-card"></i> Contact us page</a></li>
-    <li><a href="index.php?about"><i class="fas fa-address-card"></i> About us</a></li>
+    <li><a href="index.php?about"><i class="fas fa-address-card"></i> About us page</a></li>
     <li><a href="#">FAQ page</a></li>
     <li><a href="#">Slider mangemnt</a></li>
 

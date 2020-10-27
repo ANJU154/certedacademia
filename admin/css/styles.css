@@ -12,7 +12,7 @@
 
 #link h3{text-align: centre; line-height: 60px;}
 #link h3 a{text-decoration: none; color: #fff; display: block;}
-#link h3:hover{background: #51ADCF}
+#link h3:hover{background: #51ADCF;padding-left: 5%;}
 #link{width: 5%; height: 60px;float: left}
 
 
@@ -26,7 +26,7 @@
 #bodyleft ul li:hover a{color: #51ADCF;padding-left: 5%;box-sizing: border-box;text-shadow: none;}
 
 
-#bodyright{width: 82%;height: 550px;background:#fff;float: left;overflow-y: auto;}
+#bodyright{width: 82%;height: 100vh;background:#fff;float: left;overflow-y: auto;}
 #bodyright h3{color: #fff;text-align: center;font-size: 12px;background: #51ADCF;height:30px;line-height: 30px;font-weight: normal;margin-bottom: 2%;}
 
 
