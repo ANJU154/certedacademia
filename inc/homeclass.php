@@ -43,4 +43,5 @@
                                         </a>
                                                  </li>
     </ul>
+    <br clear="all"/>
 </div>

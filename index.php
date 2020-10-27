@@ -12,6 +12,7 @@
       include("inc/header.php");
       include("inc/slider.php");
       include("inc/homeclass.php");
+      include("inc/footer.php");
     ?>
   </body>
 </html>
