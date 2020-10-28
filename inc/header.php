@@ -1,11 +1,9 @@
+<?php include("function.php"); ?>
 <div id='header'>
   <div id='up_head'>
     <div id='link'>
-      <ul>
-        <li><a href='#'><i class='fab fa-facebook-f'></i></a></li>
-        <li><a href='#'><i class='fab fa-instagram'></i></a></li>
-      </ul>
-      <a href='#'><i class='fa fa-facebook'></i></a>
+    <?php echo headlink(); ?>
+
     </div>
     <div id="date">
     <p>  <?php echo date('l, d F Y'); ?></p>
