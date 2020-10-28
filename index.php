@@ -11,6 +11,7 @@
     <?php
       include("inc/header.php");
       include("inc/slider.php");
+      include("inc/about.php");
       include("inc/homeclass.php");
       include("inc/footer.php");
     ?>
